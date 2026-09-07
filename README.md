@@ -15,6 +15,16 @@ This repository marks the transition from small embedded learning exercises into
 - Use Python as a supporting engineering tool for automation, data analysis, testing, and computer-side robotics tasks
 - Create original projects strong enough for an engineering portfolio and JoyraTech content
 
+## Current Projects — Week of September 7, 2026
+
+This week is focused on three planned builds. They are documented now so the design intent, wiring, learning goals, and testing criteria are clear before construction begins. They are **not marked complete until they have been physically built, tested, debugged, and reflected on**.
+
+1. [Smart Access & Security Controller](projects/smart-access-security-controller/README.md) — RFID authorization, OLED feedback, and servo-based physical access control.
+2. [FreeRTOS Multi-Sensor Control System](projects/freertos-multi-sensor-control-system/README.md) — independent sensor and display tasks, shared system state, mutexes, and multitasking firmware architecture.
+3. [Hoverboard Motor Diagnostic Bench](projects/hoverboard-motor-diagnostic-bench/README.md) — safe low-voltage Hall-sensor diagnostics for learning BLDC motor behavior and preparing for future mobility/custom-build work.
+
+The FreeRTOS project is the primary firmware-learning project for the week, while the hoverboard diagnostic bench begins the transition toward larger JoyraTech-style electromechanical systems.
+
 ## Development Path
 
 ### Phase 1 — Robotics
@@ -128,7 +138,7 @@ The goal is not to replace C/C++ with Python, but to become comfortable using bo
 
 ### Custom ESP32 Robotic Vehicle
 
-The first project in this stage will be a custom robotic vehicle designed as a platform for learning robotics, firmware architecture, FreeRTOS, sensors, power systems, and eventually PCB design.
+The first major integrated platform in this stage will be a custom robotic vehicle designed as a platform for learning robotics, firmware architecture, FreeRTOS, sensors, power systems, and eventually PCB design.
 
 Initial target features:
 - ESP32 controller
@@ -156,10 +166,14 @@ Later versions can add:
 
 As projects are built, this repository will contain planning notes, experiments, architecture documentation, and engineering progress. Larger completed builds may receive their own dedicated repositories once they become substantial enough to stand alone.
 
-Suggested structure:
+Current structure:
 
 ```text
 Engineering-Systems-Lab/
+├── projects/
+│   ├── smart-access-security-controller/
+│   ├── freertos-multi-sensor-control-system/
+│   └── hoverboard-motor-diagnostic-bench/
 ├── robotics/
 ├── freertos/
 ├── pcb-design/
